@@ -5,8 +5,18 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
 h1 {
     text-align: center;
+    color: rgb(50, 50, 208);
+    font-size: 32px;
 }
 
 .calculadora {
@@ -16,23 +26,67 @@ h1 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: fit-content;
-    box-shadow: 5px 5px gray
+    width: 500px;
+    box-shadow: 5px 5px gray;
+    padding: 30px 20px;
+    margin-bottom: 20px;
 }
 
-.input h3 {
+input {
     text-align: center;
+    width: 70%;
+    height: 45px;
+    margin: 40px;
+    border: none;
+    border-radius: 8px;
 }
 
-.select h4 {
+span #pregunta {
+    color: rgb(102, 29, 170);
+}
+
+select {
     text-align: center;
+    margin: 10px;
+    width: 70%;
+    height: 45px;
+    background-color: rgb(102, 29, 170);
+    color: white;
+    border-radius: 8px;
 }
 
-.button button {
-    height: 40px;
+button {
+    height: 50px;
     width: 150px;
     margin: 30px;
     border: none;
     border-radius: 5px;
     background-color: rgb(50, 50, 208);
+    color: white;
+}
+
+button:hover {
+    background-color: rgb(26, 26, 112);
+}
+
+#result {
+    border: 3px solid rgb(102, 29, 170);
+    border-radius: 10px;
+    width: 300px;
+    padding:20px;
+    text-align: center;
+}
+
+#result span {
+    font-size: 24px;
+
+}
+
+#chart-container {
+    background-color: white;
+    border-radius: 15px;
+    width: 500px;
+    padding:20px;
+    text-align: center;
+    box-shadow: 5px 5px gray;
 }
